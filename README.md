@@ -18,3 +18,13 @@ The script takes 2 parameters. Source language and destination language. In the 
 `python3 translate.py en tr &`
 
 Do not forget to run script with sudo privilege.
+
+# Usage
+After copying any text on your computer, you can get the translation result by pressing the `q` button.
+
+If you want to use a button other than q, change the part below in translate.py.
+```python
+keyboard.wait('q')
+```
+
+Check out the [keyboard](https://pypi.org/project/keyboard/) library for buttons.
