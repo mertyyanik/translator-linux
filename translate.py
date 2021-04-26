@@ -4,8 +4,9 @@ import keyboard
 import re
 import sys
 
+translator = Translator()
+
 def run(text):
-	translator = Translator()
 	text = re.sub(r'[\t\r\n]+', ' ', text)
 	result = translator.translate(text, src = sys.argv[1], dest = sys.argv[2])
 	subprocess.run(['gxmessage', f'{result.text}'])
