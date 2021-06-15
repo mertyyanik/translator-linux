@@ -7,7 +7,7 @@ import sys
 translator = Translator()
 
 def run(text):
-	text = re.sub(r'[\t\r\n]+', ' ', text)
+	text = re.sub(r'[\t\r\n]+', ' ', text).replace('"','')
 	result = translator.translate(text, src = sys.argv[1], dest = sys.argv[2])
 	subprocess.run(['gxmessage', f'{result.text}'])
 
