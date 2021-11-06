@@ -1,4 +1,0 @@
-pip install googletrans==3.1.0a0
-sudo apt install gxmessage
-sudo apt install xsel
-pip install keyboard
